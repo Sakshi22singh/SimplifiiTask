@@ -1,0 +1,244 @@
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+    height: 100%;
+}
+
+.page-container {
+    display: flex;
+    height: max-content;
+    margin: 0 !important;
+    padding: 0%;
+}
+
+.image-container {
+    background-color: #252B3B;
+    width: 50%;
+    background-image: url(./Images/partners-art-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    transform: scale(1);
+}
+
+.form-container {
+    width: 50%
+}
+
+.page-container p {
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 16px;
+    left: 5%;
+    top: 12%;
+    cursor: pointer;
+}
+
+.logo-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-input {
+    width: 533px;
+    position: relative;
+}
+
+.form-input input {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    border:none;
+    height: 70px;
+    background-color: #F5F4F4;
+    color: black;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.input-container .form-control-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 4%;
+    width: 91.5%;
+    height: 2px;
+    background-color: #EC9324;
+    z-index: 1;
+}
+
+.input-container .form-control-mail::after {
+    content: '';
+    position: absolute;
+    top: 67.5px;
+    left: 4%;
+    width: 91.5%;
+    height: 2px;
+    background-color: #EC9324;
+    z-index: 1;
+}
+
+.form-input .form-control {
+    padding: 0.375rem 3.938rem !important;
+}
+
+.log-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+}
+
+.log-sec h3 {
+    align-items: center;
+    margin: 0 auto;
+}
+
+.inputwrapper {
+    position: relative;
+}
+
+.inputwrapper::after {
+    content: attr(data-required);
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    font-size: 16px;
+    transform: translateY(-50%);
+    color: #696263;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+
+.form-input input[type="email"] {
+    background-image: url(./Images/mail-icon.png);
+    background-repeat: no-repeat;
+    background-position: 24px 27px;
+}
+
+.form-input input[type="password"] {
+    background-image: url(./Images/lock-icon.png);
+    background-repeat: no-repeat;
+    background-position: 24px 27px;
+}
+
+.form-input input::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.log-in {
+    background-color: #EC9324;
+    width: 533px;
+    height: 70px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.otp-btn {
+    background-color: #F5F4F4;
+    width: 533px;
+    height: 70px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    align-items: center;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.g-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    gap: 40px;
+}
+
+.g-container img {
+    width: 184px;
+    height: 44px;
+    cursor: pointer;
+}
+
+.form-inner {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.form-inner h1 {
+    font-size: 26px;
+    color: #000000;
+}
+
+.form-input {
+    margin-top: 67px;
+}
+
+.form-input .input-container {
+    gap: 67px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.inputwrapper {
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .page-container {
+        flex-direction: column;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 300px;
+        background-position: center;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .form-input input,
+    .log-in,
+    .otp-btn {
+        width: 100%;
+    }
+
+    .log-in,
+    .otp-btn {
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .g-container {
+        gap: 20px;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    .form-input {
+        width: 100%;
+    }
+
+    .form-input input,
+    .log-in,
+    .otp-btn {
+        font-size: 16px;
+    }
+}
